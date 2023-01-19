@@ -2,20 +2,15 @@
 // Have a container hold the 16x16 divs, and place it in the HTML.
 
 let container = document.createElement("div"); // Create container for divs
+container.classList.add("container");
 
-// Create 16x16 grid.
-for (let i = 0; i < 16; i++) {
-    let row = document.createElement("div");
+// Create 64 "squares" and place them in the container.
+// Will use CSS to create the "grid" effect.
+for (let i = 0; i < 256; i++) {
+    let square = document.createElement("div");
+    square.classList.add("square");
 
-    // Add all the columns to the row.
-    for (let j = 0; j < 16; j++) {
-        let col = document.createElement("div");
-        
-        row.appendChild(col);
-    }
-
-    // Append the row to the container.
-    container.appendChild(row);
+    container.appendChild(square);
 }
 
 // Append the container to the body. 
