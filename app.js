@@ -10,6 +10,11 @@ for (let i = 0; i < 256; i++) {
     let square = document.createElement("div");
     square.classList.add("square");
 
+    // When you hover over a square, it changes its background color.
+    square.addEventListener("mouseover", event => {
+        square.style.backgroundColor = "black";
+    });
+
     container.appendChild(square);
 }
 

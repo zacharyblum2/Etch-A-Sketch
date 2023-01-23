@@ -10,6 +10,13 @@
     padding: 0;
 }
 
+.newGrid {
+    color: grey;
+    border-color:beige;
+    border-radius: 3px;
+    background-color: antiquewhite;
+}
+
 body {
     background-color: grey;
 }
