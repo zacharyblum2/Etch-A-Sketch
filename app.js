@@ -20,6 +20,9 @@ function createGrid(size) {
     container.classList.add("container");
     container.setAttribute('id', 'contain');
 
+    container.style.setProperty('--grid-rows', size);
+    container.style.setProperty('--grid-cols', size);
+
     // Create 64 "squares" and place them in the container.
     // Will use CSS to create the "grid" effect.
     for (let i = 0; i < (size * size); i++) {
