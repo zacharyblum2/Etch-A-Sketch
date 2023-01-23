@@ -6,7 +6,7 @@ function newGrid() {
     let size = prompt("Please enter your grid dimensions: ");
 
     while (size > 100) {
-        let size = prompt("Sorry, the maximum dimension is 100! Please enter a new dimension: ");
+        size = prompt("Sorry, the maximum dimension is 100! Please enter a new dimension: ");
     }
 
     // Remove the previous grid.
@@ -36,7 +36,6 @@ function createGrid(size) {
 
         container.appendChild(square);
     }
-
     // Append the container to the body. 
     document.body.appendChild(container);
 }
